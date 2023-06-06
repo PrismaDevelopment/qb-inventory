@@ -1,3 +1,5 @@
+- [FOR SUPPORT JOIN OUR DISCORD](https://discord.gg/wsuyANeZks)
+
 # qb-inventory
 
 # License
