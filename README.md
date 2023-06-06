@@ -34,6 +34,7 @@
 - Dry Feature
 - Based with 6 slot
 - Jewel section (under development)
+- Every item has durability
 - Item crafting
 - Weapon attachment crafting
 - Stashes (Personal and/or Shared)
@@ -41,3 +42,26 @@
 - Weapon serial number
 - Shops
 - Item Drops
+
+## New Updates
+- added GetAmount export to client side
+
+## Installation
+### Manual
+For adding decay rate to item go to qb-core/shared/items.lua and add "["decayrate"] = 2.5".
+
+For example
+
+['joint'] = {
+    ['name'] = 'joint', 			  	  		
+    ['label'] = 'Joint', 					
+    ['weight'] = 0, 		
+    ['type'] = 'item', 		
+    ['image'] = 'joint.png', 				
+    ['unique'] = false,
+    ["decayrate"] = 2.5,  	
+    ['useable'] = true, 	
+    ['shouldClose'] = true,    
+    ['combinable'] = nil,   
+    ['description'] = ''
+},
