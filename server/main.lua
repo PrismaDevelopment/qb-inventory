@@ -13,7 +13,7 @@ local ShopItems = {}
 
 local TimeAllowed = 1000 * 60 * 2;
 local function ConvertQuality(item, sDate)
-	if sDate == nil then sDate = os.time end
+	if sDate == nil then sDate = os.time() end
     local StartDate = sDate
     local DecayRate = QBCore.Shared.Items[item:lower()].decayrate
 	if DecayRate == nil then DecayRate = 0.0 end
