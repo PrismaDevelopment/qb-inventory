@@ -396,7 +396,7 @@ function FormatItemInfo(itemData) {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");
             $(".item-info-description").html("<p>" + itemData.description + "</p>")
             $(".item-info-line").html(
-                "<p><b>Ağırlık: </b>" +
+                "<p><b>Weight: </b>" +
                 (itemData.weight / 1000).toFixed(2) +
                 "</p>" +
                 "<p><b>Adet: </b>" +
@@ -420,7 +420,7 @@ function FormatItemInfo(itemData) {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");
             $(".item-info-description").html("<p>" + itemData.description + "</p>")
             $(".item-info-line").html(
-                "<p><b>Ağırlık: </b>" +
+                "<p><b>Weight: </b>" +
                 (itemData.weight / 1000).toFixed(2) +
                 "</p>" +
                 "<p><b>Adet: </b>" +
@@ -440,7 +440,7 @@ function FormatItemInfo(itemData) {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");
             $(".item-info-description").html("<p>" + itemData.description + "</p>")
             $(".item-info-line").html(
-                "<p><b>Ağırlık: </b>" +
+                "<p><b>Weight: </b>" +
                 (itemData.weight / 1000).toFixed(2) +
                 "</p>" +
                 "<p><b>Adet: </b>" +
@@ -458,7 +458,7 @@ function FormatItemInfo(itemData) {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");
             $(".item-info-description").html("<p>" + itemData.description + "</p>")
             $(".item-info-line").html(
-                "<p><b>Ağırlık: </b>" +
+                "<p><b>Weight: </b>" +
                 (itemData.weight / 1000).toFixed(2) +
                 "</p>" +
                 "<p><b>Adet: </b>" +
@@ -478,7 +478,7 @@ function FormatItemInfo(itemData) {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");
             $(".item-info-description").html("<p>" + itemData.description + "</p>")
             $(".item-info-line").html(
-                "<p><b>Ağırlık: </b>" +
+                "<p><b>Weight: </b>" +
                 (itemData.weight / 1000).toFixed(2) +
                 "</p>" +
                 "<p><b>Adet: </b>" +
@@ -504,7 +504,7 @@ function FormatItemInfo(itemData) {
                 });
                 $(".item-info-description").html("<p>" + itemData.description + "</p>")
                 $(".item-info-line").html(
-                    "<p><b>Ağırlık: </b>" +
+                    "<p><b>Weight: </b>" +
                     (itemData.weight / 1000).toFixed(2) +
                     "</p>" +
                     "<p><b>Adet: </b>" +
@@ -521,7 +521,7 @@ function FormatItemInfo(itemData) {
             } else {
                 $(".item-info-description").html("<p>" + itemData.description + "</p>")
                 $(".item-info-line").html(                    
-                    "<p><b>Ağırlık: </b>" +
+                    "<p><b>Weight: </b>" +
                     (itemData.weight / 1000).toFixed(2) +
                     "</p>" +
                     "<p><b>Adet: </b>" +
@@ -540,7 +540,7 @@ function FormatItemInfo(itemData) {
             $(".item-info-description").html("<p>" + itemData.description + "</p>")
             if (itemData.info.type == "casing") {
                 $(".item-info-line").html(
-                    "<p><b>Ağırlık: </b>" +
+                    "<p><b>Weight: </b>" +
                     (itemData.weight / 1000).toFixed(2) +
                     "</p>" +
                     "<p><b>Adet: </b>" +
@@ -561,7 +561,7 @@ function FormatItemInfo(itemData) {
             } else if (itemData.info.type == "blood") {
                 $(".item-info-description").html("<p>" + itemData.description + "</p>")
                 $(".item-info-line").html(
-                    "<p><b>Ağırlık: </b>" +
+                    "<p><b>Weight: </b>" +
                     (itemData.weight / 1000).toFixed(2) +
                     "</p>" +
                     "<p><b>Adet: </b>" +
@@ -580,7 +580,7 @@ function FormatItemInfo(itemData) {
             } else if (itemData.info.type == "fingerprint") {
                 $(".item-info-description").html("<p>" + itemData.description + "</p>")
                 $(".item-info-line").html(
-                    "<p><b>Ağırlık: </b>" +
+                    "<p><b>Weight: </b>" +
                     (itemData.weight / 1000).toFixed(2) +
                     "</p>" +
                     "<p><b>Adet: </b>" +
@@ -597,7 +597,7 @@ function FormatItemInfo(itemData) {
             } else if (itemData.info.type == "dna") {
                 $(".item-info-description").html("<p>" + itemData.description + "</p>")
                 $(".item-info-line").html(
-                    "<p><b>Ağırlık: </b>" +
+                    "<p><b>Weight: </b>" +
                     (itemData.weight / 1000).toFixed(2) +
                     "</p>" +
                     "<p><b>Adet: </b>" +
@@ -617,7 +617,7 @@ function FormatItemInfo(itemData) {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");
             $(".item-info-description").html("<p>" + itemData.description + "</p>")
             $(".item-info-line").html(                    
-            "<p><b>Ağırlık: </b>" +
+            "<p><b>Weight: </b>" +
             (itemData.weight / 1000).toFixed(2) +
             "</p>" +
             "<p><b>Adet: </b>" +
@@ -627,7 +627,7 @@ function FormatItemInfo(itemData) {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");
             $(".item-info-description").html("<p>" + itemData.description + "</p>")
             $(".item-info-line").html(
-                "<p><b>Ağırlık: </b>" +
+                "<p><b>Weight: </b>" +
                 (itemData.weight / 1000).toFixed(2) +
                 "</p>" +
                 "<p><b>Adet: </b>" +
@@ -638,7 +638,7 @@ function FormatItemInfo(itemData) {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");
             $(".item-info-description").html("<p>" + itemData.description + "</p>")
             $(".item-info-line").html(
-                "<p><b>Ağırlık: </b>" +
+                "<p><b>Weight: </b>" +
                 (itemData.weight / 1000).toFixed(2) +
                 "</p>" +
                 "<p><b>Adet: </b>" +
@@ -652,7 +652,7 @@ function FormatItemInfo(itemData) {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");
             $(".item-info-description").html("<p>" + itemData.description + "</p>")
             $(".item-info-line").html(
-                "<p><b>Ağırlık: </b>" +
+                "<p><b>Weight: </b>" +
                 (itemData.weight / 1000).toFixed(2) +
                 "</p>" +
                 "<p><b>Adet: </b>" +
@@ -669,7 +669,7 @@ function FormatItemInfo(itemData) {
             var res = str.slice(12);
             var cardNumber = "************" + res;
             $(".item-info-line").html(
-                "<p><b>Ağırlık: </b>" +
+                "<p><b>Weight: </b>" +
                 (itemData.weight / 1000).toFixed(2) +
                 "</p>" +
                 "<p><b>Adet: </b>" +
@@ -680,7 +680,7 @@ function FormatItemInfo(itemData) {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");
             $(".item-info-description").html("<p>" + itemData.description + "</p>")
             $(".item-info-line").html(
-                "<p><b>Ağırlık: </b>" +
+                "<p><b>Weight: </b>" +
                 (itemData.weight / 1000).toFixed(2) +
                 "</p>" +
                 "<p><b>Adet: </b>" +
@@ -691,7 +691,7 @@ function FormatItemInfo(itemData) {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");
             $(".item-info-description").html("<p>" + itemData.description + "</p>");
             $(".item-info-line").html(
-                "<p><b>Ağırlık: </b>" +
+                "<p><b>Weight: </b>" +
                 (itemData.weight / 1000).toFixed(2) +
                 "</p>" +
                 "<p><b>Adet: </b>" +
@@ -703,7 +703,7 @@ function FormatItemInfo(itemData) {
         $(".item-info-title").html("<p>" + itemData.label + "</p>");
         $(".item-info-description").html("<p>" + itemData.description + "</p>")
         $(".item-info-line").html(                    
-            "<p><b>Ağırlık: </b>" +
+            "<p><b>Weight: </b>" +
         (itemData.weight / 1000).toFixed(2) +
         "</p>" +
         "<p><b>Adet: </b>" +
@@ -1118,7 +1118,7 @@ function updateweights($fromSlot, $toSlot, $fromInv, $toInv, $toAmount) {
     }
 
     $("#player-inv-weight").html(
-        "Ağırlık: " +
+        "Weight: " +
         (parseInt(totalWeight) / 1000).toFixed(2) +
         " / " +
         (playerMaxWeight / 1000).toFixed(2)
@@ -1131,7 +1131,7 @@ function updateweights($fromSlot, $toSlot, $fromInv, $toInv, $toAmount) {
     ) {
         $("#other-inv-label").html(otherLabel);
         $("#other-inv-weight").html(
-            "Ağırlık: " +
+            "Weight: " +
             (parseInt(totalWeightOther) / 1000).toFixed(2) +
             " / " +
             (otherMaxWeight / 1000).toFixed(2)
@@ -2723,7 +2723,7 @@ var requiredItemOpen = false;
         }
 
         $("#player-inv-weight").html(
-            "Ağırlık: " +
+            "Weight: " +
             (totalWeight / 1000).toFixed(2) +
             " / " +
             (data.maxweight / 1000).toFixed(2)
@@ -2739,7 +2739,7 @@ var requiredItemOpen = false;
             } else {
                 $("#other-inv-label").html(data.other.label);
                 $("#other-inv-weight").html(
-                    "Ağırlık: " +
+                    "Weight: " +
                     (totalWeightOther / 1000).toFixed(2) +
                     " / " +
                     (data.other.maxweight / 1000).toFixed(2)
@@ -2750,7 +2750,7 @@ var requiredItemOpen = false;
         } else {
             $("#other-inv-label").html(Inventory.droplabel);
             $("#other-inv-weight").html(
-                "Ağırlık: " +
+                "Weight: " +
                 (totalWeightOther / 1000).toFixed(2) +
                 " / " +
                 (Inventory.dropmaxweight / 1000).toFixed(2)
@@ -2914,7 +2914,7 @@ var requiredItemOpen = false;
         });
 
         $("#player-inv-weight").html(
-            "Ağırlık: " +
+            "Weight: " +
             (totalWeight / 1000).toFixed(2) +
             " / " +
             (data.maxweight / 1000).toFixed(2)
