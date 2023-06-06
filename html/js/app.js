@@ -3001,15 +3001,15 @@ var requiredItemOpen = false;
             "background-color": "rgba(51, 51, 51, 0.075)",
         });
         var amount = data.amount
-        var type = "Kullanildi";
+        var type = "Used";
         if (data.type == "add") {
-            type = "Eklendi";
+            type = "Added";
             console.log(amount != null || amount != undefined || amount != 0)
             if (amount !== null || amount !== undefined || amount !== 0) {
                 type = type + amount + "x" 
             }
         } else if (data.type == "remove") {
-            type = "Silindi";
+            type = "Removed";
     
             $(".itembox-container").css({
                 "background-color": "rgba(252, 0, 0, 0.1)",
@@ -3020,16 +3020,16 @@ var requiredItemOpen = false;
             }
         }
 
-        if (type == "Kullanildi") {
+        if (type == "Used") {
             if (elde) {
                 elde = false 
                 if (weapon) {
-                    type = 'Cepte'
+                    type = 'Holster'
                 }
             } else {
                 elde = true 
                 if (weapon) {
-                    type = 'Elde'
+                    type = 'Holster'
                 }
             }
         }
