@@ -52,16 +52,16 @@ For adding decay rate to item go to qb-core/shared/items.lua and add "["decayrat
 
 For example
 
-['joint'] = {
-    ['name'] = 'joint', 			  	  		
-    ['label'] = 'Joint', 					
-    ['weight'] = 0, 		
-    ['type'] = 'item', 		
-    ['image'] = 'joint.png', 				
-    ['unique'] = false,
-    ["decayrate"] = 2.5,  	
-    ['useable'] = true, 	
-    ['shouldClose'] = true,    
-    ['combinable'] = nil,   
-    ['description'] = ''
-},
+    ['joint'] = {
+        ['name'] = 'joint', 			  	  		
+        ['label'] = 'Joint', 					
+        ['weight'] = 0, 		
+        ['type'] = 'item', 		
+        ['image'] = 'joint.png', 				
+        ['unique'] = false,
+        ["decayrate"] = 2.5,  	
+        ['useable'] = true, 	
+        ['shouldClose'] = true,    
+        ['combinable'] = nil,   
+        ['description'] = ''
+    },
