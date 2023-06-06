@@ -1,0 +1,1053 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+p {
+	margin: 0 !important;
+}
+
+:root {
+	--main-label-color: 0, 0, 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+	/* border-radius: 50px; */
+	background: #706992;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+#qbcore-inventory {
+	background-color: rgba(0, 0, 0, 0.75);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0vw;
+	display: none;
+}
+
+.inv-background {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.inv-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.player-inventory {
+	position: absolute;
+	top: 18%;
+	left: 7%;
+	width: 35.2%;
+	height: 52.4%;
+	float: left;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	z-index: 100;
+}
+
+.other-inventory {
+	position: absolute;
+	top: 18%;
+	right: 8.5%;
+	width: 35.2%;
+	height: 52.4%;
+	float: left;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	z-index: 100;
+}
+
+.ply-hotbar-inventory {
+	position: absolute;
+	bottom: 10%;
+	left: 35.5%;
+	z-index: 105;
+}
+
+.player-inventory>.item-slot>.item-slot-key>p {
+	position: absolute;
+	color: black;
+	background-color: white;
+	padding: .1vh;
+	padding-left: .1vh;
+	text-align: center;
+	font-size: 1vh;
+	width: 1.5vh;
+	height: 2vh;
+	line-height: 1.8vh;
+	font-weight:700;
+	font-family: 'Heebo', sans-serif;
+}
+
+.inv-options {
+	position: absolute;
+	margin: 0 auto;
+	right: 0;
+	width: 7%;
+	top: 28%;
+	left: 0.5vh;
+}
+
+.combine-option-container {
+	display: none;
+	position: absolute;
+	margin: 0 auto;
+	right: 0;
+	width: 8.5%;
+	top: 59%;
+	left: 0vh;
+}
+
+.item-slot {
+	position: relative;
+	width: 10vh;
+	height: 13vh;
+	float: left;
+	left: 2vh;
+	background-color: rgba(65, 65, 65, 0.1);
+	border: 1.8px solid rgba(158, 158, 158, 0.089);
+	margin: -0.1px;
+	transition: opacity 0.2s;
+	opacity: 1.0;
+	/* border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px; */
+}
+
+.item-slot-hoverClass {
+	opacity: .6;
+}
+
+.item-slot:hover {
+	opacity: .7;
+}
+
+.inv-option-item {
+	margin-top: 3%;
+}
+
+.btn-inv {
+	width: 100%!important;
+	max-width: 100%!important;
+	padding: 10%!important;
+	background-color: rgb(235, 235, 235);
+}
+
+#item-amount {
+	color: white;
+	text-align: center;
+	font-size: 1.25vh;
+	font-family: 'Heebo', sans-serif;
+	outline: none;
+}
+
+.ammo-info-block {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 22vh;
+	height: 11vh;
+	background-color: rgba(235, 235, 235, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.01);
+	top: 2vh;
+}
+
+.ammo-info-header {
+	width: 100%;
+	color: white;
+	font-family: 'Heebo', sans-serif;
+	background-color: rgba(0, 0, 0, 0.192);
+	font-size: 1.vh;
+	padding: .4vh;
+	text-align: center;
+}
+
+.ammo-info {
+	position: relative;
+	color: white;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 200;
+	font-size: 1.vh;
+	margin-left: .8vh;
+	margin-top: .4vh;
+	margin-bottom: .25vh;
+	top: .6vh;
+}
+
+.ammo-info span {
+	margin-right: 1vh;
+	float: right;
+}
+
+.inv-option-item>p {
+	color: white;
+	text-align: center;
+	line-height: 48px;
+	text-transform: uppercase;
+	font-size: 1.2vh;
+	font-weight: 700;
+	background-color: rgba(87, 87, 87, 0.021);
+	font-family: 'Heebo', sans-serif;
+}
+
+.inv-option-item {
+	width: 90%;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.144);
+	border: 1px solid rgba(255, 255, 255, .01);
+	color: white;
+	transition: background-color .1s linear;
+}
+
+.inv-option-item:hover {
+	background-color: rgba(0, 0, 0, 0.35);
+}
+
+
+#item-use, #item-give, #inv-close {
+	cursor: pointer;
+}
+
+
+#jewelery {
+	position: relative;
+	/* cursor: pointer; */
+	height: 3vh;
+	width: 3vh;
+	left: 4vh;
+}
+
+#jewelery:hover {
+	border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+#jewelery img {
+	position: relative;
+	top: 0.02vh;
+	right: 0.1vh;
+	cursor: pointer;
+	height: 3vh;
+	width: 3vh;
+}
+
+.inv-option-item2 {
+	margin-top: 70%;
+}
+
+.inv-option-item2>p {
+	color: white;
+	text-align: center;
+	line-height: 48px;
+	font-size: 1.2vh;
+	font-weight: 500;
+	background-color: rgba(87, 87, 87, 0.021);
+	font-family: 'Heebo', sans-serif;
+}
+
+.inv-option-item2 {
+	width: 90%;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.144);
+	border: 1px solid rgba(255, 255, 255, .01);
+	color: white;
+	transition: background-color .1s linear;
+}
+
+.inv-option-item2:hover {
+	background-color: rgba(0, 0, 0, 0.35);
+}
+
+#inv-close {
+	bottom: -120%;
+	background-color: rgba(90, 1, 1, 0.473);
+}
+
+.btn-combine {
+	position: relative;
+	margin-top: 20px;
+	width: 78%;
+	left: 2px;
+	color: white;
+	border: 1px solid rgba(255, 255, 255, .01);
+	background-color: rgba(26, 26, 26, 0.6);
+	text-align: center;
+	line-height: 48px;
+	text-transform: uppercase;
+	font-size: 1.2vh;
+	transition: background-color .1s linear;
+	font-weight: 900;
+	font-family: 'Heebo', sans-serif;
+}
+
+.btn-combine>p {
+	color: white;
+	text-align: center;
+	line-height: 48px;
+	text-transform: uppercase;
+	font-size: 1.1vh;
+	font-family: 'Heebo', sans-serif;
+	background-color: rgb(0 0 0 / 20%);
+}
+
+.item-slot-amount {
+	position: absolute;
+	top: 0.3vh;
+	right: 0.2vw;
+}
+
+.item-slot-amount>p {
+	color: #c7c7c7;
+	text-align: right;
+	font-weight: 500;
+	font-size: 1.05vh;
+	letter-spacing: .015vh;
+	font-family: 'Raleway', sans-serif;
+}
+
+.item-slot-label {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 11%;
+	/* border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px; */
+	background-color: rgba(59, 59, 59, 0.658);
+}
+
+.item-slot-label>p {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: white;
+	font-size: 0.7vh;
+	padding: 3px;
+	text-align: center;
+	letter-spacing: 0.6px;
+	font-family: 'Heebo', sans-serif;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.item-slot-quality {
+	position: absolute;
+	bottom: 1.4vh;
+	width: 100%;
+	height: 1vh;
+	background-color: rgba(82, 82, 82, 0.15);
+}
+
+.item-slot-quality-bar {
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	background-color: green;
+	z-index: 1;
+}
+
+.item-slot-quality-bar p {
+	color: white;
+	/* display: flex; */
+	text-align: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: .85vh;
+	/* letter-spacing: .015vh; */
+	font-family: 'Raleway', sans-serif;
+}
+
+.item-slot-img {
+	max-width: 100%;
+	max-height: 100%;
+	padding: 0.5vw;
+}
+
+.item-slot-img img {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 30%;
+	width: 55px;
+	height: 55px;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.info-slot-img {
+	max-width: 100%;
+	max-height: 100%;
+	padding: 0.5vw;
+}
+
+.info-slot-img img {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 20%;
+	width: 55px;
+	height: 55px;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.ui-draggable-dragging {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.player-inv-info {
+	position: absolute;
+	left: 16.3%;
+	top: 11%;
+}
+
+#player-inv-label {
+	position: relative;
+	color: white;
+	font-size: 20px;
+	/* font-style: italic; */
+	font-family: 'Heebo', sans-serif;
+	font-weight: 700;
+	left: -14vh;
+	bottom: 10px;
+	float: left;
+	/* text-transform: uppercase; */
+}
+
+#player-inv-weight {
+	/* position: relative;
+	color: white;
+	font-size: 12px;
+	font-weight: 900;
+	left: -108.9%;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.1vh;
+	float: left; */
+	left: -14vh;
+	position: relative;
+	color: white;
+	font-size: 16px;
+	/* font-style: italic; */
+	font-family: 'Heebo', sans-serif;
+	font-weight: 400;
+	/* letter-spacing: 0.1vh; */
+	bottom: 10px;
+	float: left;
+	/* text-transform: uppercase; */
+}
+
+#other-inv-label {
+	position: relative;
+	color: white;
+	font-size: 20px;
+	/* font-style: italic; */
+	font-family: 'Heebo', sans-serif;
+	font-weight: 700;
+	font-weight: bold;
+	bottom: 10px;
+	float: left;
+	left: -1vh;
+	/* text-transform: uppercase; */
+}
+
+#other-inv-weight {
+	position: relative;
+	color: white;
+	font-size: 16px;
+	/* font-style: italic; */
+	font-family: 'Heebo', sans-serif;
+	font-weight: 400;
+	/* letter-spacing: 0.1vh; */
+	bottom: 10px;
+	float: left;
+	left: -1vh;
+	/* text-transform: uppercase; */
+}
+
+.player-inv-weight {
+	position: absolute;
+	left: 38%;
+	top: 12%;
+}
+
+.player-inv-weight>p {
+	color: white;
+	font-size: 12px;
+	font-family: 'Heebo', sans-serif;
+}
+
+.other-inv-info {
+	position: absolute;
+	left:58.35%;
+	top: 11%;
+}
+
+hr.new1 {
+	width: 100%;
+	border-top: 2px solid rgba(150, 150, 150, 0.7);
+}
+
+.ply-iteminfo-container {
+	font-family: 'Heebo', sans-serif;
+	display: none;
+	position: absolute;
+	bottom: 4%;
+	margin: 0 auto;
+	left: -15;
+	right: 0;
+	text-align: left;
+	padding: .3%;
+	padding-left: .4%;
+	padding-right: .4%;
+	width: 46vh;
+	height: 19.5vh;
+	border-radius: 2px;
+	/* background-color: red; */
+	background-color: rgba(29, 29, 29, 0.466);
+}
+
+.item-info-title {
+	/* text-transform: uppercase; */
+	font-weight: 500;
+	font-family: 'Heebo', sans-serif;
+	font-size: 18.8px;
+	color: white;
+	padding-top: .55px;
+	padding-left: 2%;
+	letter-spacing: 0.05vh;
+	padding-right: 2%;
+}
+
+.item-info-line {
+	/* text-transform: uppercase; */
+	font-size: 1.1vh;
+	font-family: 'Heebo', sans-serif;
+	color: rgb(202, 202, 202);
+	padding-top: .2vh;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.item-info-description {
+	/* text-transform: uppercase; */
+	font-size: 1.1vh;
+	font-family: 'Heebo', sans-serif;
+	color: rgb(202, 202, 202);
+	padding-top: .75vh;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.itemboxes-container {
+	height: 150px;
+	min-width: 110px;
+	max-width: 600px;
+	width: fit-content;
+	position: absolute;
+	left: 47%;
+	bottom: 16.70%;
+	overflow: hidden;
+}
+
+.template {
+	display: none;
+}
+
+.itembox-container {
+	display: none;
+	position: relative;
+	float: left;
+	/* margin: 0 auto; */
+	margin-right: 1vh;
+	width: 9.99vh;
+	height: 13vh;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	/* background-color: rgba(252, 0, 0, 0.11); */
+	/* border: 1px solid rgb(68 68 68 / 40%); */
+}
+
+#itembox-action {
+	position: relative;
+	color: rgb(0, 0, 0);
+	background-color: white;
+	border-top-left-radius: 1px;
+	padding: 1px;
+	top: 0;
+	left: 0;
+	height: 12.25%;
+}
+
+#itembox-action>p {
+	font-size: 10px;
+	font-weight: 700;
+	font-family: 'Heebo', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: -0.05%;
+}
+
+#itembox-label {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(71, 71, 71, 0.9);
+	min-height: 1vh;
+	height: fit-content;
+}
+
+#itembox-label>p {
+	color: #ffffff;
+	font-size: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.25vh;
+}
+
+.requiredItem-container {
+	display: none;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+}
+
+.requiredItem-box {
+	position: relative;
+	top: 70%;
+	left: 42%;
+	width: 9vh;
+	height: 11vh;
+	float: left;
+	margin-left: 20px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid rgb(68 68 68 / 40%);
+}
+
+#requiredItem-action {
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: white;
+	padding: 3px;
+	font-size: 10px;
+	font-family: 'Heebo', sans-serif;
+}
+
+#requiredItem-label {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: rgb(0 0 0 / 20%);
+	height: 2.6vh;
+}
+
+#requiredItem-label>p {
+	color: #ffffff;
+	font-size: 11px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 3vh;
+}
+
+.z-hotbar-inventory {
+	display: none;
+	position: absolute;
+	bottom: 0.4%;
+	margin: 0 auto;
+	left: -3%;
+	right: 0;
+	width: fit-content;
+	z-index: 100;
+}
+
+/* jezzy */
+.z-hotbar-inventory>.z-hotbar-item-slot>.z-hotbar-item-slot-key>p {  
+	position: absolute;
+	color: black;
+	background-color: white;
+	padding: .1vh;
+	padding-left: .1vh;
+	text-align: center;
+	font-size: 1vh;
+	width: 1.5vh;
+	height: 2vh;
+	line-height: 1.8vh;
+	font-weight:700;
+	font-family: 'Heebo', sans-serif;
+}
+
+.z-hotbar-item-slot {
+	position: relative;
+	width: 10vh;
+	height: 13vh;
+	float: left;
+	left: 2vh;
+	background-color: rgba(20, 20, 20, 0.219);
+	border: 1.8px solid rgba(126, 126, 126, 0.5);
+	margin: 0.1px;
+	transition: opacity 0.2s;
+	opacity: 1.0;
+	/* border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px; */
+}
+
+.z-hotbar-item-slot-amount {
+	position: absolute;
+	top: 0.3vh;
+	right: 0.3vw;
+}
+
+.z-hotbar-item-slot-amount>p {
+	color: #ffffff;
+	text-align: right;
+	font-size: 10px;
+}
+
+.z-hotbar-item-slot-label {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* background-color: rgba(var(--main-label-color), 0.35); */
+	min-height: 2.2vh;
+	height: fit-content;
+}
+
+.z-hotbar-item-slot-label>p {
+	color: rgb(247, 247, 247);
+	font-size: 11.5px;
+	text-align: center;
+	text-transform: lowercase;
+	font-family: 'Heebo', sans-serif;
+	font-variant: small-caps;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.z-hotbar-item-slot-img {
+	max-width: 100%;
+	max-height: 100%;
+	padding: 0.9vw;
+}
+
+.z-hotbar-item-slot-img img {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 30%;
+	width: 55px;
+	height: 55px;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.ammo-container {
+	position: absolute;
+	background-color: rgba(20, 18, 32, 0.2);
+	width: 3.25%;
+	height: 44.16%;
+	top: 26%;
+	left: 6%;
+}
+
+.ammo-container-header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 5vh;
+	background-color: rgba(43, 43, 43, 0.5);
+	text-align: center;
+	color: rgba(216, 216, 216, 0.897);
+}
+
+.ammo-container-header>i {
+	line-height: 5vh;
+	font-size: 1.8vh;
+}
+
+.ammo-box {
+	position: relative;
+	width: 100%;
+	height: 6vh;
+	top: 5vh;
+	background-color: rgba(0, 0, 0, .4);
+	margin-bottom: .5vh;
+	margin-top: .5vh;
+}
+
+.ammo-box>img {
+	position: absolute;
+	top: .15vh;
+	left: .2vh;
+	width: 5.25vh;
+	opacity: .25;
+}
+
+.ammo-box>span {
+	position: absolute;
+	color: rgba(255, 255, 255, 0.95);
+	font-size: .93vh;
+	bottom: 0;
+	right: 0;
+	margin: .3vh;
+	font-family: 'Heebo', sans-serif;
+}
+
+.ammo-box-amount {
+	position: absolute;
+	width: 100%;
+	background-color: rgba(36, 36, 36, 0.4);
+	bottom: 0;
+	max-height: 100%;
+}
+
+#pistol_ammo>.ammo-box-amount {
+	height: 0%;
+}
+
+#smg_ammo>.ammo-box-amount {
+	height: 0%;
+}
+
+#shotgun_ammo>.ammo-box-amount {
+	height: 0%;
+}
+
+#rifle_ammo>.ammo-box-amount {
+	height: 0%;
+}
+
+/* Weapon Attachments */
+
+.weapon-attachments-container {
+	position: absolute;
+	left: -100vw;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.weapon-attachments-container-title {
+	position: absolute;
+	margin: 5vh;
+	font-size: 3vh;
+	color: rgb(255, 255, 255);
+	font-family: 'Heebo', sans-serif;
+}
+
+.weapon-attachments-container-description {
+	position: absolute;
+	margin: 5vh;
+	top: 5vh;
+	font-size: 1.7vh;
+	color: rgba(255, 255, 255, 0.8);
+	font-family: 'Heebo', sans-serif;
+}
+
+.weapon-attachments-container-details {
+	position: absolute;
+	margin: 5vh;
+	top: 9vh;
+	font-size: 1.4vh;
+	color: rgba(255, 255, 255, 0.8);
+	font-family: 'Heebo', sans-serif;
+}
+
+.weapon-attachments-container-detail-durability {
+	height: 1.5vh;
+	width: 10vh;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 1px;
+}
+
+.weapon-attachments-container-detail-durability-total {
+	height: 100%;
+	width: 50%;
+	background-color: rgb(39, 174, 96);
+}
+
+.weapon-attachments-container-image {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 32%;
+	width: 30%;
+}
+
+.weapon-attachments {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 5vh;
+	width: 50vh;
+	height: 12.5vh;
+}
+
+.weapon-attachments-title {
+	position: absolute;
+	bottom: 14vh;
+	left: 0;
+	margin: 5vh;
+	color: rgba(255, 255, 255, 0.8);
+	font-family: 'Heebo', sans-serif;
+	font-size: 1.4vh
+}
+
+.weapon-attachment {
+	position: relative;
+	height: 12.5vh;
+	width: 10.5vh;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid rgb(75, 75, 75);
+	margin-right: 1vh;
+	float: left;
+	transition: .05s linear;
+}
+
+.weapon-attachment:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+	border: 1px solid rgb(29, 29, 29);
+	transition: .05s linear;
+}
+
+.weapon-attachment-label {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(var(--main-label-color), 0.3);
+	padding: 2.1%;
+}
+
+.weapon-attachment-label>p {
+	color: #ffffff;
+	font-size: 1.1vh;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.9vh;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 100;
+}
+
+.weapon-attachment-img {
+	max-width: 100%;
+	max-height: 100%;
+	padding: 0.5vw;
+}
+
+.weapon-attachment-img>img {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 10%;
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.weapon-attachments-remove {
+	position: absolute;
+	width: 6.5vh;
+	height: 6.5vh;
+	background-color: rgb(15, 15, 15);
+	border-radius: 1px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: 20vh;
+	text-align: center;
+	color: white;
+	font-size: 2vh;
+	transition: background-color .05s linear;
+}
+
+.weapon-attachments-remove:hover {
+	background-color: rgb(18, 18, 18);
+}
+
+.weapon-attachments-remove>i {
+	line-height: 6.5vh;
+}
+
+.weapon-attachments-remove-hover {
+	background-color: rgb(39, 174, 96);
+}
+
+.weapon-dragging-class {
+	animation: ShakeEffect .75s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes ShakeEffect {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+
+.weapon-attachments-back {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 10vh;
+	height: 6vh;
+	margin: 5vh;
+	background-color: rgb(15, 15, 15);
+	border-radius: 1px;
+	text-align: center;
+	line-height: 6vh;
+	color: white;
+	font-family: 'Heebo', sans-serif;
+	transition: .05s linear;
+}
+
+.weapon-attachments-back:hover {
+	background-color: rgb(18, 18, 18);
+}
