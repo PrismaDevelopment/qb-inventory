@@ -595,15 +595,16 @@ local function GetStashItems(stashId)
 	if not stashItems then return items end
 
 	for _, item in pairs(stashItems) do
-		-- item.description = nil
-		if stashItems[_].name == 'wetbud' then
-			if stashItems[_].info.date then
-				local DRY_TIME = 1000*120*12;
-				if (stashItems[_].info.date+DRY_TIME < os.time()) then
-					stashItems[_].name = 'driedbud'
+		for i=1, #Config.DryItems do
+			if stashItems[_].name == Config.DryItems[i].name then
+				if stashItems[_].info.date then
+					local DRY_TIME = Config.DryItems[i].drytime
+					if (stashItems[_].info.date+DRY_TIME < os.time()) then
+						stashItems[_].name = Config.DryItems[i].drieditem
+					end
+				else
+					stashItems[_].info.date = os.time()
 				end
-			else
-				stashItems[_].info.date = os.time()
 			end
 		end
 	end
@@ -647,10 +648,11 @@ local function SaveStashItems(stashId, items)
 
 	for _, item in pairs(items) do
 		item.description = nil
-
-		if items[_].name == 'wetbud' then
-			if items[_].info.date == nil then
-				items[_].info.date = os.time()
+		for i=1, #Config.DryItems do
+			if items[_].name == Config.DryItems[i].name then
+				if items[_].info.date == nil then
+					items[_].info.date = os.time()
+				end
 			end
 		end
 	end

@@ -10,6 +10,14 @@ Config.KeyBinds = {
     HotBar = 'z'
 }
 
+Config.DryItems = {
+    {
+        name = 'wetbud', 
+        drytime = 1000*120*12,
+        drieditem = 'driedbud'
+    }
+}
+
 Config.CleanupDropTime = 15 * 60 -- How many seconds it takes for drops to be untouched before being deleted
 Config.MaxDropViewDistance = 12.5 -- The distance in GTA Units that a drop can be seen
 Config.UseItemDrop = false -- This will enable item object to spawn on drops instead of markers
