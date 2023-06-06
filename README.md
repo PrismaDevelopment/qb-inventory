@@ -1,4 +1,4 @@
-- [FOR SUPPORT JOIN OUR DISCORD](https://discord.gg/wsuyANeZks)
+# [FOR SUPPORT JOIN OUR DISCORD](https://discord.gg/wsuyANeZks)
 
 # qb-inventory
 
